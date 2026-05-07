@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('norse/Norse.woff2') format('woff2'),
+        url('norse/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse-bold';
+    src: url('norse/Norse-Bold.woff2') format('woff2'),
+        url('norse/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 p {
     font-size: 75px;
+    font-family: Norse-bold;
 }
