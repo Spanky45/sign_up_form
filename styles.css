@@ -134,6 +134,10 @@ body {
     /* color: darkgrey; */
 }
 
+input {
+    border-radius: 5px;
+}
+
 form {
     display: flex;
     align-items: center;
@@ -144,6 +148,65 @@ form {
     /* column-gap: 10px; */
 }
 
+.input-group > input {
+    width: 280px;
+    height: 32px;
+    border: 1px solid #ccc;
+}
+
 .form-content > p {
     margin-bottom: 15px;
+}
+
+.input-group > input:user-invalid {
+    border: 3px solid red;
+}
+
+.input-group > input:user-valid {
+    border: 3px solid green;
+}
+
+input:focus {
+    border: 3px solid rgb(20, 138, 248);
+    outline: none;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button-wrapper > p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+p a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.submit {
+    display: flex;
+    /* align-items: center; */
+}
+
+.button-wrapper {
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-top: 60px;
+    margin-left: 60px;
 }

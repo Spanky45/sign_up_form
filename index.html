@@ -27,14 +27,14 @@
             <div class="form-content">
                 <p>Lets do this!</p>
                 <div class="label-wrapper">
-                    <form action="tylertauth.com" method="post">
+                    <form id="signup" action="tylertauth.com" method="post">
                         <div class="input-group">
                             <label for="first_name">First Name:</label>
-                            <input type="text" id="first_name" />
+                            <input type="text" id="first_name" minlength="1" maxlength="12" />
                         </div>
                         <div class="input-group">
                             <label for="last_name">Last Name:</label>
-                            <input type="text" id="last_name" />
+                            <input type="text" id="last_name" minlength="1" maxlength="12" />
                         </div>
                         <div class="input-group">
                             <label for="email">Email:</label>
@@ -42,22 +42,25 @@
                         </div>
                         <div class="input-group">
                             <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" />
+                            <input type="tel" id="phone" minlength="9" />
                         </div>
                         <div class="input-group">
                             <label for="password">Password:</label>
-                            <input type="password" id="password" />
+                            <input type="password" id="password" minlength="5" maxlength="15" />
                         </div>
                         <div class="input-group">
                             <label for="confirm-password">Confirm Password:</label>
-                            <input type="password" id="confirm-password" />
+                            <input type="password" id="confirm-password" minlength="5" maxlength="15" />
                         </div>
                     </form>
                 </div>
             </div>  
         </div>
         <div class="submit">
-
+            <div class="button-wrapper">
+                <button class="create-acc" type="submit" form="signup">Create Account</button>
+                <p>Already have  an account? <a href="https://www.youtube.com">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
